@@ -1,3 +1,6 @@
+"
+" dein 設定スクリプト
+"
 
 " プラグインが実際にインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
