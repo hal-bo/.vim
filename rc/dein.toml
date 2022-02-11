@@ -1,0 +1,42 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# --------------------------------------------
+#  ファイラー
+# --------------------------------------------
+    [[plugins]]
+    repo = 'scrooloose/nerdtree'
+    hook_add = '''
+        nnoremap <silent><C-f> :NERDTreeToggle<CR>
+        " ブックマークを初期表示
+        let g:NERDTreeShowBookmarks=1
+        " autocmd vimenter * NERDTree
+        " Vim起動時にNERDTreeを表示
+    '''
+
+
+# --------------------------------------------
+#  アイコン
+# --------------------------------------------
+
+    [[plugins]]
+    repo = 'ryanoasis/vim-devicons'
+    hook_add = '''
+        let g:webdevicons_enable_nerdtree=1
+    '''
+
+
+
+# --------------------------------------------
+#  シンタックスハイライト
+# --------------------------------------------
+
+    [[plugins]]
+    repo = 'sheerun/vim-polyglot'
+
+# --------------------------------------------
+#  Gitの操作
+# --------------------------------------------
+
+    [[plugins]]
+    repo = 'tpope/vim-fugitive'
