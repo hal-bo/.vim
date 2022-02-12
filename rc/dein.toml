@@ -13,8 +13,6 @@ repo = 'Shougo/dein.vim'
         " autocmd vimenter * NERDTree
         " Vim起動時にNERDTreeを表示
     '''
-
-
 # --------------------------------------------
 #  アイコン
 # --------------------------------------------
@@ -25,8 +23,6 @@ repo = 'Shougo/dein.vim'
         let g:webdevicons_enable_nerdtree=1
     '''
 
-
-
 # --------------------------------------------
 #  シンタックスハイライト
 # --------------------------------------------
@@ -35,8 +31,20 @@ repo = 'Shougo/dein.vim'
     repo = 'sheerun/vim-polyglot'
 
 # --------------------------------------------
-#  Gitの操作
+#  マークダウンプレビュー
 # --------------------------------------------
 
+    [[plugins]]
+    repo = 'skanehira/preview-markdown.vim'
+    hook_add = '''
+        let g:preview_markdown_parser='glow'
+        let g:preview_markdown_vertical=1
+        let g:preview_markdown_auto_update=1
+    '''
+# --------------------------------------------
+#  Gitの操作
+# --------------------------------------------
+    [[plugins]]
+    repo= 'airblade/vim-gitgutter'
     [[plugins]]
     repo = 'tpope/vim-fugitive'
